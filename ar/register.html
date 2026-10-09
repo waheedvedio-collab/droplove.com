@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14070f">
+<title>Create profile — DrofLove.com</title>
+<meta name="description" content="Dating for singles, couples &amp; the curious">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta name="csrf-token" content="e1b2e05d08b4cdf6748353acaf9b02500c926c5bf04becf6028526102dff8880">
+</head>
+<body class="rtl">
+
+<!-- Skip link for keyboard users -->
+<a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+          <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z"
+                fill="url(#g1)"/>
+          <defs><linearGradient id="g1" x1="2" y1="4" x2="22" y2="20">
+            <stop stop-color="#ff5fa2"/><stop offset="1" stop-color="#b14cff"/>
+          </linearGradient></defs>
+        </svg>
+      </span>
+      <span class="brand-name">DrofLove.com</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="../discover.html" class="nav-link">اكتشف</a>
+            <a href="../#gallery" class="nav-link">معرض</a>
+      <a href="../#how" class="nav-link">كيف يعمل</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="تبديل القائمة" aria-expanded="false" aria-controls="mainNav">&#9776;</button>
+              <a class="btn btn-ghost btn-sm" href="../login.html">تسجيل الدخول</a>
+        <a class="btn btn-primary btn-sm" href="../register.html">إنشاء ملف شخصي</a>
+      
+      <!-- Language bar -->
+      <div class="lang-bar">
+        <button
+          class="lang-trigger"
+          type="button"
+          aria-label="تبديل اللغة"
+          aria-expanded="false"
+          aria-controls="langDropdown"
+          id="langTrigger"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span id="langTriggerLabel">العربية</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:10px;height:10px">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+
+        <div class="lang-dropdown" id="langDropdown" role="menu" aria-label="اللغة">
+          <div class="lang-dropdown-header">اللغة</div>
+                                  <a
+              class="lang-option"
+              ../
+              data-lang="en"
+                          >
+              <span>English</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../fr/
+              data-lang="fr"
+                          >
+              <span>Français</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../es/
+              data-lang="es"
+                          >
+              <span>Español</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../de/
+              data-lang="de"
+                          >
+              <span>Deutsch</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../it/
+              data-lang="it"
+                          >
+              <span>Italiano</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../pt/
+              data-lang="pt"
+                          >
+              <span>Português</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../ru/
+              data-lang="ru"
+                          >
+              <span>Русский</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../hi/
+              data-lang="hi"
+                          >
+              <span>हिन्दी</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../zh/
+              data-lang="zh"
+                          >
+              <span>中文</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../ja/
+              data-lang="ja"
+                          >
+              <span>日本語</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../tr/
+              data-lang="tr"
+                          >
+              <span>Türkçe</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option cur"
+              ../
+              data-lang="ar"
+              aria-current="true"            >
+              <span>العربية</span>
+              <span class="lang-native">✓</span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../ur/
+              data-lang="ur"
+                          >
+              <span>اردو</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../bn/
+              data-lang="bn"
+                          >
+              <span>বাংলা</span>
+              <span class="lang-native"></span>
+            </a>
+                    <div style="font-size:.75rem;color:var(--muted-2);padding:.4rem .6rem 0;line-height:1.4">
+            لغتك يتم حفظها تلقائياً.          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+
+<div class="auth-wrap">
+  <div class="card card-pad auth-card wide">
+    <div class="auth-head">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+          <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#fff"/>
+        </svg>
+      </span>
+      <h1 style="font-size:1.7rem">أنشئ ملفي</h1>
+      <p class="text-muted" style="margin:0">انضم إلى DrofLove.com — مجاناً وخاصاً</p>
+    </div>
+
+    <form method="post" action="../register.html" novalidate>
+      <input type="hidden" name="csrf" value="e1b2e05d08b4cdf6748353acaf9b02500c926c5bf04becf6028526102dff8880">
+      <!-- Community picker -->
+      <div class="field">
+        <label>أنا أنضم كـ…</label>
+        <div class="cat-grid">
+                      <label class="cat-opt">
+              <input type="radio" name="category" value="single_m" >
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">♂</span>
+                <span class="cat-label">Singles — Male</span>
+              </span>
+            </label>
+                      <label class="cat-opt">
+              <input type="radio" name="category" value="single_f" >
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">♀</span>
+                <span class="cat-label">Singles — Female</span>
+              </span>
+            </label>
+                      <label class="cat-opt">
+              <input type="radio" name="category" value="couple" >
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">⚧</span>
+                <span class="cat-label">Couples</span>
+              </span>
+            </label>
+                      <label class="cat-opt">
+              <input type="radio" name="category" value="mmf" >
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">♂♂♀</span>
+                <span class="cat-label">MMF (2 Men + 1 Woman)</span>
+              </span>
+            </label>
+                      <label class="cat-opt">
+              <input type="radio" name="category" value="ffm" >
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">♀♀♂</span>
+                <span class="cat-label">FFM (2 Women + 1 Man)</span>
+              </span>
+            </label>
+                  </div>
+              </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label for="first_name">الاسم الأول</label>
+          <input class="input" type="text" id="first_name" name="first_name"
+                 value="" autocomplete="given-name" required maxlength="60" placeholder="Ana">
+                  </div>
+        <div class="field">
+          <label for="last_name">اسم العائلة <span class="text-muted" style="font-weight:400">(اختياري)</span></label>
+          <input class="input" type="text" id="last_name" name="last_name"
+                 value="" autocomplete="family-name" maxlength="60" placeholder="Sofia">
+        </div>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label for="username">Username</label>
+          <input class="input" type="text" id="username" name="username"
+                 value="" autocomplete="username" required minlength="3" maxlength="30"
+                 pattern="[A-Za-z0-9_]+" placeholder="ana_sofia">
+                    <div class="hint">أحرف وأرقام فقط وتحت شرطة.</div>
+        </div>
+        <div class="field">
+          <label for="birth_date">تاريخ الميلاد <span class="text-muted" style="font-weight:400">(18+)</span></label>
+          <input class="input" type="date" id="birth_date" name="birth_date"
+                 value="" required max="2008-10-09">
+                  </div>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label for="email">البريد الإلكتروني</label>
+          <input class="input" type="email" id="email" name="email"
+                 value="" autocomplete="email" required placeholder="you@example.com"
+                 >
+                  </div>
+        <div class="field">
+          <label for="gender">الجنس</label>
+          <select class="select" id="gender" name="gender">
+            <option value="female" >أنثى</option>
+            <option value="male"   >ذكر</option>
+            <option value="other"  >آخر / أفضل عدم الإخبار</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label for="password">كلمة المرور</label>
+          <input class="input" type="password" id="password" name="password"
+                 autocomplete="new-password" required minlength="8" placeholder="At least 8 characters">
+          <div id="pwStrength" class="hint" aria-live="polite"></div>
+                  </div>
+        <div class="field">
+          <label for="password_confirm">تأكيد كلمة المرور</label>
+          <input class="input" type="password" id="password_confirm" name="password_confirm"
+                 autocomplete="new-password" required minlength="8" placeholder="Repeat your password">
+                  </div>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label for="orientation">Orientation</label>
+          <select class="select" id="orientation" name="orientation">
+                          <option value="flexible" >Flexible</option>
+                          <option value="straight" >Straight</option>
+                          <option value="gay" >Gay</option>
+                          <option value="bi" >Bi</option>
+                          <option value="pan" >Pan</option>
+                          <option value="ace" >Ace</option>
+                      </select>
+        </div>
+        <div class="field">
+          <label for="looking_for">Looking for</label>
+          <select class="select" id="looking_for" name="looking_for">
+                          <option value="friends" >Friends</option>
+                          <option value="dating" >Dating</option>
+                          <option value="relationship" >Relationship</option>
+                          <option value="couples" >Couples</option>
+                          <option value="mmf" >Mmf</option>
+                          <option value="ffm" >Ffm</option>
+                          <option value="open" >Open</option>
+                      </select>
+        </div>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label for="city">المدينة <span class="text-muted" style="font-weight:400">(اختياري)</span></label>
+          <input class="input" type="text" id="city" name="city" value="" maxlength="60" placeholder="Paris">
+        </div>
+        <div class="field">
+          <label for="country">البلد <span class="text-muted" style="font-weight:400">(اختياري)</span></label>
+          <input class="input" type="text" id="country" name="country" value="" maxlength="60" placeholder="France">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="bio">نبذة قصيرة <span class="text-muted" style="font-weight:400">(اختياري), 2000 chars</span></label>
+        <textarea class="input" id="bio" name="bio" maxlength="2000" placeholder="Tell us a little about yourself…"></textarea>
+      </div>
+
+      <div class="field">
+        <label class="check">
+          <input type="checkbox" name="tos" value="1"  required>
+          <span>I confirm I am <strong>18 years or older</strong> and I accept the
+            <a href="../terms.html" target="_blank" rel="noopener">Terms of Service</a> and
+            <a href="../privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span>
+        </label>
+              </div>
+
+      <button class="btn btn-primary btn-block btn-lg" type="submit">أنشئ ملفي</button>
+    </form>
+
+    <p class="auth-switch">
+      لديك حساب بالفعل؟ <a href="../login.html">تسجيل الدخول</a>
+    </p>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="../">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#ff5fa2"/>
+          </svg>
+        </span>
+        <span class="brand-name">DrofLove.com</span>
+      </a>
+      <p class="footer-tag">مساحة خاصة ومتعددة اللغات للأعزاء والأزواج ومجموعة poly للتعارف.</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Account">
+      <h3>الحساب</h3>
+      <a href="../register.html">إنشاء ملف شخصي</a>
+      <a href="../login.html">تسجيل الدخول</a>
+      <a href="../edit_profile.html">إعدادات الملف الشخصي</a>
+      <a href="../dashboard.html">لوحة القيادة</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="Explore">
+      <h3>استكشاف</h3>
+              <a href="../discover.html">Singles — Male</a>
+              <a href="../discover.html">Singles — Female</a>
+              <a href="../discover.html">Couples</a>
+              <a href="../discover.html">MMF (2 Men + 1 Woman)</a>
+              <a href="../discover.html">FFM (2 Women + 1 Man)</a>
+          </nav>
+
+    <nav class="footer-col" aria-label="Support">
+      <h3>الدعم</h3>
+      <a href="../#safety">مركز الأمان</a>
+      <a href="../terms.html">شروط الخدمة</a>
+      <a href="../privacy.html">سياسة الخصوصية</a>
+      <a href="../contact.html">اتصل بنا</a>
+    </nav>
+
+    <div class="footer-col footer-lang-col">
+      <h3>اللغة</h3>
+      <form method="get" action="../register.html" class="lang-form">
+                <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="اختر اللغة">
+                      <option value="en" >English</option>
+                      <option value="fr" >Français</option>
+                      <option value="es" >Español</option>
+                      <option value="de" >Deutsch</option>
+                      <option value="it" >Italiano</option>
+                      <option value="pt" >Português</option>
+                      <option value="ru" >Русский</option>
+                      <option value="hi" >हिन्दी</option>
+                      <option value="zh" >中文</option>
+                      <option value="ja" >日本語</option>
+                      <option value="tr" >Türkçe</option>
+                      <option value="ar" selected>العربية</option>
+                      <option value="ur" >اردو</option>
+                      <option value="bn" >বাংলা</option>
+                  </select>
+      </form>
+      <p class="footer-note">14 لغة · 5 فئات</p>
+    </div>
+  </div>
+
+  <div class="container footer-base">
+    <p>&copy; 2026 DrofLove.com · v1.0.0 · 18+ only</p>
+    <p class="footer-base-note">جميع الأعضاء يجب أن يكونوا 18 أو أكثر. كن محترماً — التقارير تُراجع.</p>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+
+<script src="../assets/js/app.js?v=1791535199" defer></script>
+<script>
+  document.documentElement.setAttribute('dir', 'rtl');
+</script>
+</body>
+</html>

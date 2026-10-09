@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14070f">
+<title>Sign in — DrofLove.com</title>
+<meta name="description" content="Dating for singles, couples &amp; the curious">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta name="csrf-token" content="46db067a86ef629cdf7875b43d4d62bac22c443b3f9cd2ff3f412284ba6d8767">
+</head>
+<body class="ltr">
+
+<!-- Skip link for keyboard users -->
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+          <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z"
+                fill="url(#g1)"/>
+          <defs><linearGradient id="g1" x1="2" y1="4" x2="22" y2="20">
+            <stop stop-color="#ff5fa2"/><stop offset="1" stop-color="#b14cff"/>
+          </linearGradient></defs>
+        </svg>
+      </span>
+      <span class="brand-name">DrofLove.com</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="../discover.html" class="nav-link">Открыть</a>
+            <a href="../#gallery" class="nav-link">Галерея</a>
+      <a href="../#how" class="nav-link">Как это работает</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Переключить меню" aria-expanded="false" aria-controls="mainNav">&#9776;</button>
+              <a class="btn btn-ghost btn-sm" href="../login.html">Войти</a>
+        <a class="btn btn-primary btn-sm" href="../register.html">Создать профиль</a>
+      
+      <!-- Language bar -->
+      <div class="lang-bar">
+        <button
+          class="lang-trigger"
+          type="button"
+          aria-label="Сменить язык"
+          aria-expanded="false"
+          aria-controls="langDropdown"
+          id="langTrigger"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span id="langTriggerLabel">Русский</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:10px;height:10px">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+
+        <div class="lang-dropdown" id="langDropdown" role="menu" aria-label="Язык">
+          <div class="lang-dropdown-header">Язык</div>
+                                  <a
+              class="lang-option"
+              ../
+              data-lang="en"
+                          >
+              <span>English</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../fr/
+              data-lang="fr"
+                          >
+              <span>Français</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../es/
+              data-lang="es"
+                          >
+              <span>Español</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../de/
+              data-lang="de"
+                          >
+              <span>Deutsch</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../it/
+              data-lang="it"
+                          >
+              <span>Italiano</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../pt/
+              data-lang="pt"
+                          >
+              <span>Português</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option cur"
+              ../
+              data-lang="ru"
+              aria-current="true"            >
+              <span>Русский</span>
+              <span class="lang-native">✓</span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../hi/
+              data-lang="hi"
+                          >
+              <span>हिन्दी</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../zh/
+              data-lang="zh"
+                          >
+              <span>中文</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../ja/
+              data-lang="ja"
+                          >
+              <span>日本語</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../tr/
+              data-lang="tr"
+                          >
+              <span>Türkçe</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../ar/
+              data-lang="ar"
+                          >
+              <span>العربية</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../ur/
+              data-lang="ur"
+                          >
+              <span>اردو</span>
+              <span class="lang-native"></span>
+            </a>
+                                  <a
+              class="lang-option"
+              ../bn/
+              data-lang="bn"
+                          >
+              <span>বাংলা</span>
+              <span class="lang-native"></span>
+            </a>
+                    <div style="font-size:.75rem;color:var(--muted-2);padding:.4rem .6rem 0;line-height:1.4">
+            Ваш язык сохраняется автоматически.          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+
+<div class="auth-wrap">
+  <div class="card card-pad auth-card">
+    <div class="auth-head">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+          <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#fff"/>
+        </svg>
+      </span>
+      <h1 style="font-size:1.7rem">Добро пожаловать обратно</h1>
+      <p class="text-muted" style="margin:0">Войдите в DrofLove.com</p>
+    </div>
+
+    <form method="post" action="../login.html" novalidate>
+      <input type="hidden" name="csrf" value="46db067a86ef629cdf7875b43d4d62bac22c443b3f9cd2ff3f412284ba6d8767">
+      <div class="field">
+        <label for="email">Email или имя пользователя</label>
+        <input class="input" type="email" id="email" name="email"
+               value="" autocomplete="username" required placeholder="you@example.com">
+              </div>
+
+      <div class="field">
+        <label for="password">Пароль</label>
+        <input class="input" type="password" id="password" name="password"
+               autocomplete="current-password" required placeholder="••••••••">
+              </div>
+
+      <button class="btn btn-primary btn-block btn-lg" type="submit">Войти</button>
+    </form>
+
+    <p class="auth-switch">
+      Новый здесь? <a href="../register.html">Создать профиль</a>
+    </p>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="../">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#ff5fa2"/>
+          </svg>
+        </span>
+        <span class="brand-name">DrofLove.com</span>
+      </a>
+      <p class="footer-tag">Частное, многоязычное пространство для одиноких, пар и poly-групп, чтобы познакомиться.</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Account">
+      <h3>Аккаунт</h3>
+      <a href="../register.html">Создать профиль</a>
+      <a href="../login.html">Войти</a>
+      <a href="../edit_profile.html">Настройки профиля</a>
+      <a href="../dashboard.html">Панель</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="Explore">
+      <h3>Исследовать</h3>
+              <a href="../discover.html">Singles — Male</a>
+              <a href="../discover.html">Singles — Female</a>
+              <a href="../discover.html">Couples</a>
+              <a href="../discover.html">MMF (2 Men + 1 Woman)</a>
+              <a href="../discover.html">FFM (2 Women + 1 Man)</a>
+          </nav>
+
+    <nav class="footer-col" aria-label="Support">
+      <h3>Поддержка</h3>
+      <a href="../#safety">Центр безопасности</a>
+      <a href="../terms.html">Условия обслуживания</a>
+      <a href="../privacy.html">Политика конфиденциальности</a>
+      <a href="../contact.html">Свяжитесь с нами</a>
+    </nav>
+
+    <div class="footer-col footer-lang-col">
+      <h3>Язык</h3>
+      <form method="get" action="../login.html" class="lang-form">
+                <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="Выбрать язык">
+                      <option value="en" >English</option>
+                      <option value="fr" >Français</option>
+                      <option value="es" >Español</option>
+                      <option value="de" >Deutsch</option>
+                      <option value="it" >Italiano</option>
+                      <option value="pt" >Português</option>
+                      <option value="ru" selected>Русский</option>
+                      <option value="hi" >हिन्दी</option>
+                      <option value="zh" >中文</option>
+                      <option value="ja" >日本語</option>
+                      <option value="tr" >Türkçe</option>
+                      <option value="ar" >العربية</option>
+                      <option value="ur" >اردو</option>
+                      <option value="bn" >বাংলা</option>
+                  </select>
+      </form>
+      <p class="footer-note">14 языков · 5 категорий</p>
+    </div>
+  </div>
+
+  <div class="container footer-base">
+    <p>&copy; 2026 DrofLove.com · v1.0.0 · 18+ only</p>
+    <p class="footer-base-note">Все участники должны быть старше 18 лет. Будьте уважительны — сообщения проверяются.</p>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+
+<script src="../assets/js/app.js?v=1791535199" defer></script>
+<script>
+  document.documentElement.setAttribute('dir', 'ltr');
+</script>
+</body>
+</html>
