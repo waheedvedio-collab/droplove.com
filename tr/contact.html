@@ -197,31 +197,34 @@
     <span class="eyebrow">Support</span>
     <h1 style="font-size:2.4rem">Contact us</h1>
     <p class="text-muted">Questions, feedback, or a privacy request? Send us a message.</p>
-    <form class="card card-pad" method="post" action="/contact.php" novalidate>
+
+    
+    <form class="card card-pad" method="post" action="../contact.html" novalidate>
+      
       <div class="row-2">
         <div class="field">
           <label for="c_name">Your name</label>
           <input class="input" type="text" id="c_name" name="name"
                  value="" required minlength="2" maxlength="80">
-        </div>
+                  </div>
         <div class="field">
           <label for="c_email">Your email</label>
           <input class="input" type="email" id="c_email" name="email"
                  value="" required placeholder="you@example.com">
-        </div>
+                  </div>
       </div>
 
       <div class="field">
         <label for="c_subject">Subject</label>
         <input class="input" type="text" id="c_subject" name="subject"
                value="" required minlength="3" maxlength="120" placeholder="Account help, bug report…">
-      </div>
+              </div>
 
-      <div class="class-body">
+      <div class="field">
         <label for="c_body">Message</label>
         <textarea class="input" id="c_body" name="body"
                   required minlength="10" maxlength="2000" placeholder="How can we help?"></textarea>
-      </div>
+              </div>
 
       <button class="btn btn-primary" type="submit">Send message</button>
     </form>
@@ -271,24 +274,22 @@
 
     <div class="footer-col footer-lang-col">
       <h3>Dil</h3>
-      \g<1>"../"\g<3>
-                <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="Dil seç">
-                      <option value="en" >English</option>
-                      <option value="fr" >Français</option>
-                      <option value="es" >Español</option>
-                      <option value="de" >Deutsch</option>
-                      <option value="it" >Italiano</option>
-                      <option value="pt" >Português</option>
-                      <option value="ru" >Русский</option>
-                      <option value="hi" >हिन्दी</option>
-                      <option value="zh" >中文</option>
-                      <option value="ja" >日本語</option>
-                      <option value="tr" selected>Türkçe</option>
-                      <option value="ar" >العربية</option>
-                      <option value="ur" >اردو</option>
-                      <option value="bn" >বাংলা</option>
-                  </select>
-      </form>
+      <div class="lang-links">
+<a class="lang-opt" href="../">English</a>
+<a class="lang-opt" href="../fr/">Français</a>
+<a class="lang-opt" href="../es/">Español</a>
+<a class="lang-opt" href="../de/">Deutsch</a>
+<a class="lang-opt" href="../it/">Italiano</a>
+<a class="lang-opt" href="../pt/">Português</a>
+<a class="lang-opt" href="../ru/">Русский</a>
+<a class="lang-opt" href="../hi/">हिन्दी</a>
+<a class="lang-opt" href="../zh/">中文</a>
+<a class="lang-opt" href="../ja/">日本語</a>
+<span class="lang-cur">Türkçe</span>
+<a class="lang-opt" href="../ar/">العربية</a>
+<a class="lang-opt" href="../ur/">اردو</a>
+<a class="lang-opt" href="../bn/">বাংলা</a>
+</div>
       <p class="footer-note">14 dil · 5 kategori</p>
     </div>
   </div>

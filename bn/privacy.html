@@ -279,24 +279,22 @@
 
     <div class="footer-col footer-lang-col">
       <h3>ভাষা</h3>
-      \g<1>"../"\g<3>
-                <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="ভাষা নির্বাচন করুন">
-                      <option value="en" >English</option>
-                      <option value="fr" >Français</option>
-                      <option value="es" >Español</option>
-                      <option value="de" >Deutsch</option>
-                      <option value="it" >Italiano</option>
-                      <option value="pt" >Português</option>
-                      <option value="ru" >Русский</option>
-                      <option value="hi" >हिन्दी</option>
-                      <option value="zh" >中文</option>
-                      <option value="ja" >日本語</option>
-                      <option value="tr" >Türkçe</option>
-                      <option value="ar" >العربية</option>
-                      <option value="ur" >اردو</option>
-                      <option value="bn" selected>বাংলা</option>
-                  </select>
-      </form>
+      <div class="lang-links">
+<a class="lang-opt" href="../">English</a>
+<a class="lang-opt" href="../fr/">Français</a>
+<a class="lang-opt" href="../es/">Español</a>
+<a class="lang-opt" href="../de/">Deutsch</a>
+<a class="lang-opt" href="../it/">Italiano</a>
+<a class="lang-opt" href="../pt/">Português</a>
+<a class="lang-opt" href="../ru/">Русский</a>
+<a class="lang-opt" href="../hi/">हिन्दी</a>
+<a class="lang-opt" href="../zh/">中文</a>
+<a class="lang-opt" href="../ja/">日本語</a>
+<a class="lang-opt" href="../tr/">Türkçe</a>
+<a class="lang-opt" href="../ar/">العربية</a>
+<a class="lang-opt" href="../ur/">اردو</a>
+<span class="lang-cur">বাংলা</span>
+</div>
       <p class="footer-note">14 ভাষা · 5 বিষয়</p>
     </div>
   </div>
@@ -313,5 +311,16 @@
 <script>
   document.documentElement.setAttribute('dir', 'ltr');
 </script>
-</body>
+
+<script>
+  (function() {
+    var postForms = document.querySelectorAll('form[method="post"]');
+    postForms.forEach(function(f) {
+      f.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("The full DrofLove.com app is being deployed. Visit droflove.com to create your profile and start connecting.");
+      });
+    });
+  })();
+</script></body>
 </html>

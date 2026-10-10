@@ -193,23 +193,32 @@
 <main id="main">
 
 <div class="auth-wrap">
-      <form method="post" action="/login.php" novalidate>
+  <div class="card card-pad auth-card">
+    <div class="auth-head">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+          <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#fff"/>
+        </svg>
+      </span>
+      <h1 style="font-size:1.7rem">پلی بیک</h1>
+      <p class="text-muted" style="margin:0">DrofLove.com میں سائن ان کریں</p>
+    </div>
+
+    <form method="post" action="../login.html" novalidate>
       
       <div class="field">
-        <label for="email">Email or username</label>
+        <label for="email">ای میل یا صارف نام</label>
         <input class="input" type="email" id="email" name="email"
                value="" autocomplete="username" required placeholder="you@example.com">
-              
-      </div>
+              </div>
 
       <div class="field">
-        <label for="password">Password</label>
+        <label for="password">پاس ورڈ</label>
         <input class="input" type="password" id="password" name="password"
                autocomplete="current-password" required placeholder="••••••••">
-              
-      </div>
+              </div>
 
-      <button class="btn btn-primary btn-block btn-lg" type="submit">Sign in</button>
+      <button class="btn btn-primary btn-block btn-lg" type="submit">سائن ان</button>
     </form>
 
     <p class="auth-switch">
@@ -261,24 +270,22 @@
 
     <div class="footer-col footer-lang-col">
       <h3>زبان</h3>
-      \g<1>"../"\g<3>
-                <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="زبان منتخب کریں">
-                      <option value="en" >English</option>
-                      <option value="fr" >Français</option>
-                      <option value="es" >Español</option>
-                      <option value="de" >Deutsch</option>
-                      <option value="it" >Italiano</option>
-                      <option value="pt" >Português</option>
-                      <option value="ru" >Русский</option>
-                      <option value="hi" >हिन्दी</option>
-                      <option value="zh" >中文</option>
-                      <option value="ja" >日本語</option>
-                      <option value="tr" >Türkçe</option>
-                      <option value="ar" >العربية</option>
-                      <option value="ur" selected>اردو</option>
-                      <option value="bn" >বাংলা</option>
-                  </select>
-      </form>
+      <div class="lang-links">
+<a class="lang-opt" href="../">English</a>
+<a class="lang-opt" href="../fr/">Français</a>
+<a class="lang-opt" href="../es/">Español</a>
+<a class="lang-opt" href="../de/">Deutsch</a>
+<a class="lang-opt" href="../it/">Italiano</a>
+<a class="lang-opt" href="../pt/">Português</a>
+<a class="lang-opt" href="../ru/">Русский</a>
+<a class="lang-opt" href="../hi/">हिन्दी</a>
+<a class="lang-opt" href="../zh/">中文</a>
+<a class="lang-opt" href="../ja/">日本語</a>
+<a class="lang-opt" href="../tr/">Türkçe</a>
+<a class="lang-opt" href="../ar/">العربية</a>
+<span class="lang-cur">اردو</span>
+<a class="lang-opt" href="../bn/">বাংলা</a>
+</div>
       <p class="footer-note">14 زبانیں · 5 زمرہ بندیاں</p>
     </div>
   </div>
