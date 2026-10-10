@@ -193,33 +193,18 @@
 <main id="main">
 
 <div class="auth-wrap">
-  <div class="card card-pad auth-card">
-    <div class="auth-head">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
-          <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#fff"/>
-        </svg>
-      </span>
-      <h1 style="font-size:1.7rem">مرحباً بعودتك</h1>
-      <p class="text-muted" style="margin:0">سجّل الدخول إلى DrofLove.com</p>
-    </div>
-
-    <form method="post" action="https://droflove.com/login.php?lang=ar" novalidate>
-      
-      <div class="field">
-        <label for="email">البريد الإلكتروني أو اسم المستخدم</label>
-        <input class="input" type="email" id="email" name="email"
-               value="" autocomplete="username" required placeholder="you@example.com">
-              </div>
-
-      <div class="field">
-        <label for="password">كلمة المرور</label>
-        <input class="input" type="password" id="password" name="password"
-               autocomplete="current-password" required placeholder="••••••••">
-              </div>
-
-      <button class="btn btn-primary btn-block btn-lg" type="submit">تسجيل الدخول</button>
-    </form>
+  <div class="auth-notice" style="max-width:480px;margin:2rem auto;padding:2rem;text-align:center">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+        <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#ff5fa2"/>
+      </svg>
+    </span>
+    <h2 style="font-size:1.4rem;margin:1rem 0">Sign-in is coming soon</h2>
+    <p class="text-muted" style="margin-bottom:1.5rem">
+      The full DrofLove.com app is being deployed. Visit <a href="https://droflove.com" style="color:var(--accent)">droflove.com</a>
+      to create your profile and start connecting.
+    </p>
+  </div>
 
     <p class="auth-switch">
       جديد هنا؟ <a href="../register.html">إنشاء ملف شخصي</a>
@@ -270,22 +255,24 @@
 
     <div class="footer-col footer-lang-col">
       <h3>اللغة</h3>
-      <div class="lang-links">
-<a class="lang-opt" href="../">English</a>
-<a class="lang-opt" href="../fr/">Français</a>
-<a class="lang-opt" href="../es/">Español</a>
-<a class="lang-opt" href="../de/">Deutsch</a>
-<a class="lang-opt" href="../it/">Italiano</a>
-<a class="lang-opt" href="../pt/">Português</a>
-<a class="lang-opt" href="../ru/">Русский</a>
-<a class="lang-opt" href="../hi/">हिन्दी</a>
-<a class="lang-opt" href="../zh/">中文</a>
-<a class="lang-opt" href="../ja/">日本語</a>
-<a class="lang-opt" href="../tr/">Türkçe</a>
-<span class="lang-cur">العربية</span>
-<a class="lang-opt" href="../ur/">اردو</a>
-<a class="lang-opt" href="../bn/">বাংলা</a>
-</div>
+      \g<1>"../"\g<3>
+                <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="اختر اللغة">
+                      <option value="en" >English</option>
+                      <option value="fr" >Français</option>
+                      <option value="es" >Español</option>
+                      <option value="de" >Deutsch</option>
+                      <option value="it" >Italiano</option>
+                      <option value="pt" >Português</option>
+                      <option value="ru" >Русский</option>
+                      <option value="hi" >हिन्दी</option>
+                      <option value="zh" >中文</option>
+                      <option value="ja" >日本語</option>
+                      <option value="tr" >Türkçe</option>
+                      <option value="ar" selected>العربية</option>
+                      <option value="ur" >اردو</option>
+                      <option value="bn" >বাংলা</option>
+                  </select>
+      </form>
       <p class="footer-note">14 لغة · 5 فئات</p>
     </div>
   </div>
