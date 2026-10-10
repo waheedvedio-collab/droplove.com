@@ -10,7 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="4b41f587bb6c5ed3bfbc2e71bbf3250110507d10875401145eec94654452db2f">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="ltr">
 
@@ -67,7 +70,7 @@
           <div class="lang-dropdown-header">Idioma</div>
                                   <a
               class="lang-option"
-              ../
+              href="../"
               data-lang="en"
                           >
               <span>English</span>
@@ -75,7 +78,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../fr/
+              href="../fr/"
               data-lang="fr"
                           >
               <span>Français</span>
@@ -83,7 +86,7 @@
             </a>
                                   <a
               class="lang-option cur"
-              ../
+              href="../"
               data-lang="es"
               aria-current="true"            >
               <span>Español</span>
@@ -91,7 +94,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../de/
+              href="../de/"
               data-lang="de"
                           >
               <span>Deutsch</span>
@@ -99,7 +102,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../it/
+              href="../it/"
               data-lang="it"
                           >
               <span>Italiano</span>
@@ -107,7 +110,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../pt/
+              href="../pt/"
               data-lang="pt"
                           >
               <span>Português</span>
@@ -115,7 +118,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ru/
+              href="../ru/"
               data-lang="ru"
                           >
               <span>Русский</span>
@@ -123,7 +126,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../hi/
+              href="../hi/"
               data-lang="hi"
                           >
               <span>हिन्दी</span>
@@ -131,7 +134,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../zh/
+              href="../zh/"
               data-lang="zh"
                           >
               <span>中文</span>
@@ -139,7 +142,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ja/
+              href="../ja/"
               data-lang="ja"
                           >
               <span>日本語</span>
@@ -147,7 +150,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../tr/
+              href="../tr/"
               data-lang="tr"
                           >
               <span>Türkçe</span>
@@ -155,7 +158,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ar/
+              href="../ar/"
               data-lang="ar"
                           >
               <span>العربية</span>
@@ -163,7 +166,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ur/
+              href="../ur/"
               data-lang="ur"
                           >
               <span>اردو</span>
@@ -171,7 +174,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../bn/
+              href="../bn/"
               data-lang="bn"
                           >
               <span>বাংলা</span>
@@ -194,34 +197,31 @@
     <span class="eyebrow">Support</span>
     <h1 style="font-size:2.4rem">Contact us</h1>
     <p class="text-muted">Questions, feedback, or a privacy request? Send us a message.</p>
-
-    
-    <form class="card card-pad" method="post" action="../contact.html" novalidate>
-      <input type="hidden" name="csrf" value="4b41f587bb6c5ed3bfbc2e71bbf3250110507d10875401145eec94654452db2f">
+    <form class="card card-pad" method="post" action="/contact.php" novalidate>
       <div class="row-2">
         <div class="field">
           <label for="c_name">Your name</label>
           <input class="input" type="text" id="c_name" name="name"
                  value="" required minlength="2" maxlength="80">
-                  </div>
+        </div>
         <div class="field">
           <label for="c_email">Your email</label>
           <input class="input" type="email" id="c_email" name="email"
                  value="" required placeholder="you@example.com">
-                  </div>
+        </div>
       </div>
 
       <div class="field">
         <label for="c_subject">Subject</label>
         <input class="input" type="text" id="c_subject" name="subject"
                value="" required minlength="3" maxlength="120" placeholder="Account help, bug report…">
-              </div>
+      </div>
 
-      <div class="field">
+      <div class="class-body">
         <label for="c_body">Message</label>
         <textarea class="input" id="c_body" name="body"
                   required minlength="10" maxlength="2000" placeholder="How can we help?"></textarea>
-              </div>
+      </div>
 
       <button class="btn btn-primary" type="submit">Send message</button>
     </form>
@@ -271,7 +271,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>Idioma</h3>
-      <form method="get" action="../contact.html" class="lang-form">
+      \g<1>"../"\g<3>
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="Seleccionar idioma">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>
@@ -305,5 +305,16 @@
 <script>
   document.documentElement.setAttribute('dir', 'ltr');
 </script>
-</body>
+
+<script>
+  (function() {
+    var postForms = document.querySelectorAll('form[method="post"]');
+    postForms.forEach(function(f) {
+      f.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("The full DrofLove.com app is being deployed. Visit droflove.com to create your profile and start connecting.");
+      });
+    });
+  })();
+</script></body>
 </html>

@@ -10,7 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="351221587239e03049d6d4ca318468fd01fdb1678d2e9ee7905234100e186552">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="ltr">
 
@@ -67,7 +70,7 @@
           <div class="lang-dropdown-header">ভাষা</div>
                                   <a
               class="lang-option"
-              ../
+              href="../"
               data-lang="en"
                           >
               <span>English</span>
@@ -75,7 +78,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../fr/
+              href="../fr/"
               data-lang="fr"
                           >
               <span>Français</span>
@@ -83,7 +86,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../es/
+              href="../es/"
               data-lang="es"
                           >
               <span>Español</span>
@@ -91,7 +94,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../de/
+              href="../de/"
               data-lang="de"
                           >
               <span>Deutsch</span>
@@ -99,7 +102,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../it/
+              href="../it/"
               data-lang="it"
                           >
               <span>Italiano</span>
@@ -107,7 +110,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../pt/
+              href="../pt/"
               data-lang="pt"
                           >
               <span>Português</span>
@@ -115,7 +118,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ru/
+              href="../ru/"
               data-lang="ru"
                           >
               <span>Русский</span>
@@ -123,7 +126,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../hi/
+              href="../hi/"
               data-lang="hi"
                           >
               <span>हिन्दी</span>
@@ -131,7 +134,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../zh/
+              href="../zh/"
               data-lang="zh"
                           >
               <span>中文</span>
@@ -139,7 +142,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ja/
+              href="../ja/"
               data-lang="ja"
                           >
               <span>日本語</span>
@@ -147,7 +150,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../tr/
+              href="../tr/"
               data-lang="tr"
                           >
               <span>Türkçe</span>
@@ -155,7 +158,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ar/
+              href="../ar/"
               data-lang="ar"
                           >
               <span>العربية</span>
@@ -163,7 +166,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ur/
+              href="../ur/"
               data-lang="ur"
                           >
               <span>اردو</span>
@@ -171,7 +174,7 @@
             </a>
                                   <a
               class="lang-option cur"
-              ../
+              href="../"
               data-lang="bn"
               aria-current="true"            >
               <span>বাংলা</span>
@@ -190,32 +193,23 @@
 <main id="main">
 
 <div class="auth-wrap">
-  <div class="card card-pad auth-card">
-    <div class="auth-head">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
-          <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#fff"/>
-        </svg>
-      </span>
-      <h1 style="font-size:1.7rem">আবার আসার জন্য ধন্যবাদ</h1>
-      <p class="text-muted" style="margin:0">DrofLove.com এ সাইন ইন করুন</p>
-    </div>
-
-    <form method="post" action="../login.html" novalidate>
-      <input type="hidden" name="csrf" value="351221587239e03049d6d4ca318468fd01fdb1678d2e9ee7905234100e186552">
+      <form method="post" action="/login.php" novalidate>
+      
       <div class="field">
-        <label for="email">ইমেল বা ব্যবহারকারী নাম</label>
+        <label for="email">Email or username</label>
         <input class="input" type="email" id="email" name="email"
                value="" autocomplete="username" required placeholder="you@example.com">
-              </div>
+              
+      </div>
 
       <div class="field">
-        <label for="password">পাসওয়ার্ড</label>
+        <label for="password">Password</label>
         <input class="input" type="password" id="password" name="password"
                autocomplete="current-password" required placeholder="••••••••">
-              </div>
+              
+      </div>
 
-      <button class="btn btn-primary btn-block btn-lg" type="submit">সাইন ইন</button>
+      <button class="btn btn-primary btn-block btn-lg" type="submit">Sign in</button>
     </form>
 
     <p class="auth-switch">
@@ -267,7 +261,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>ভাষা</h3>
-      <form method="get" action="../login.html" class="lang-form">
+      \g<1>"../"\g<3>
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="ভাষা নির্বাচন করুন">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>
@@ -301,5 +295,16 @@
 <script>
   document.documentElement.setAttribute('dir', 'ltr');
 </script>
-</body>
+
+<script>
+  (function() {
+    var postForms = document.querySelectorAll('form[method="post"]');
+    postForms.forEach(function(f) {
+      f.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("The full DrofLove.com app is being deployed. Visit droflove.com to create your profile and start connecting.");
+      });
+    });
+  })();
+</script></body>
 </html>

@@ -10,7 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="e1b2e05d08b4cdf6748353acaf9b02500c926c5bf04becf6028526102dff8880">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="rtl">
 
@@ -67,7 +70,7 @@
           <div class="lang-dropdown-header">اللغة</div>
                                   <a
               class="lang-option"
-              ../
+              href="../"
               data-lang="en"
                           >
               <span>English</span>
@@ -75,7 +78,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../fr/
+              href="../fr/"
               data-lang="fr"
                           >
               <span>Français</span>
@@ -83,7 +86,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../es/
+              href="../es/"
               data-lang="es"
                           >
               <span>Español</span>
@@ -91,7 +94,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../de/
+              href="../de/"
               data-lang="de"
                           >
               <span>Deutsch</span>
@@ -99,7 +102,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../it/
+              href="../it/"
               data-lang="it"
                           >
               <span>Italiano</span>
@@ -107,7 +110,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../pt/
+              href="../pt/"
               data-lang="pt"
                           >
               <span>Português</span>
@@ -115,7 +118,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ru/
+              href="../ru/"
               data-lang="ru"
                           >
               <span>Русский</span>
@@ -123,7 +126,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../hi/
+              href="../hi/"
               data-lang="hi"
                           >
               <span>हिन्दी</span>
@@ -131,7 +134,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../zh/
+              href="../zh/"
               data-lang="zh"
                           >
               <span>中文</span>
@@ -139,7 +142,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ja/
+              href="../ja/"
               data-lang="ja"
                           >
               <span>日本語</span>
@@ -147,7 +150,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../tr/
+              href="../tr/"
               data-lang="tr"
                           >
               <span>Türkçe</span>
@@ -155,7 +158,7 @@
             </a>
                                   <a
               class="lang-option cur"
-              ../
+              href="../"
               data-lang="ar"
               aria-current="true"            >
               <span>العربية</span>
@@ -163,7 +166,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../ur/
+              href="../ur/"
               data-lang="ur"
                           >
               <span>اردو</span>
@@ -171,7 +174,7 @@
             </a>
                                   <a
               class="lang-option"
-              ../bn/
+              href="../bn/"
               data-lang="bn"
                           >
               <span>বাংলা</span>
@@ -190,172 +193,151 @@
 <main id="main">
 
 <div class="auth-wrap">
-  <div class="card card-pad auth-card wide">
-    <div class="auth-head">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
-          <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#fff"/>
-        </svg>
-      </span>
-      <h1 style="font-size:1.7rem">أنشئ ملفي</h1>
-      <p class="text-muted" style="margin:0">انضم إلى DrofLove.com — مجاناً وخاصاً</p>
-    </div>
-
-    <form method="post" action="../register.html" novalidate>
-      <input type="hidden" name="csrf" value="e1b2e05d08b4cdf6748353acaf9b02500c926c5bf04becf6028526102dff8880">
+      <form method="post" action="/register.php" enctype="multipart/form-data" novalidate>
+      
       <!-- Community picker -->
       <div class="field">
-        <label>أنا أنضم كـ…</label>
+        <label>I am joining as…</label>
         <div class="cat-grid">
-                      <label class="cat-opt">
-              <input type="radio" name="category" value="single_m" >
+            <label class="cat-opt">
+              <input type="radio" name="category" value="single_m">
               <span class="cat-body">
                 <span class="cat-icon" aria-hidden="true">♂</span>
                 <span class="cat-label">Singles — Male</span>
               </span>
             </label>
-                      <label class="cat-opt">
-              <input type="radio" name="category" value="single_f" >
+            <label class="cat-opt">
+              <input type="radio" name="category" value="single_f">
               <span class="cat-body">
                 <span class="cat-icon" aria-hidden="true">♀</span>
                 <span class="cat-label">Singles — Female</span>
               </span>
             </label>
-                      <label class="cat-opt">
-              <input type="radio" name="category" value="couple" >
+            <label class="cat-opt">
+              <input type="radio" name="category" value="couple">
               <span class="cat-body">
                 <span class="cat-icon" aria-hidden="true">⚧</span>
                 <span class="cat-label">Couples</span>
               </span>
             </label>
-                      <label class="cat-opt">
-              <input type="radio" name="category" value="mmf" >
+            <label class="cat-opt">
+              <input type="radio" name="category" value="mmf">
               <span class="cat-body">
                 <span class="cat-icon" aria-hidden="true">♂♂♀</span>
                 <span class="cat-label">MMF (2 Men + 1 Woman)</span>
               </span>
             </label>
-                      <label class="cat-opt">
-              <input type="radio" name="category" value="ffm" >
+            <label class="cat-opt">
+              <input type="radio" name="category" value="ffm">
               <span class="cat-body">
                 <span class="cat-icon" aria-hidden="true">♀♀♂</span>
                 <span class="cat-label">FFM (2 Women + 1 Man)</span>
               </span>
             </label>
-                  </div>
-              </div>
-
+        </div>
+      </div>
       <div class="row-2">
         <div class="field">
-          <label for="first_name">الاسم الأول</label>
+          <label for="first_name">First name</label>
           <input class="input" type="text" id="first_name" name="first_name"
                  value="" autocomplete="given-name" required maxlength="60" placeholder="Ana">
-                  </div>
+        </div>
         <div class="field">
-          <label for="last_name">اسم العائلة <span class="text-muted" style="font-weight:400">(اختياري)</span></label>
+          <label for="last_name">Last name <span class="text-muted" style="font-weight:400">Optional</span></label>
           <input class="input" type="text" id="last_name" name="last_name"
                  value="" autocomplete="family-name" maxlength="60" placeholder="Sofia">
         </div>
       </div>
-
       <div class="row-2">
         <div class="field">
           <label for="username">Username</label>
           <input class="input" type="text" id="username" name="username"
                  value="" autocomplete="username" required minlength="3" maxlength="30"
                  pattern="[A-Za-z0-9_]+" placeholder="ana_sofia">
-                    <div class="hint">أحرف وأرقام فقط وتحت شرطة.</div>
+          <div class="hint">Letters, numbers, and underscores only.</div>
         </div>
         <div class="field">
-          <label for="birth_date">تاريخ الميلاد <span class="text-muted" style="font-weight:400">(18+)</span></label>
+          <label for="birth_date">Birth date <span class="text-muted" style="font-weight:400">(18+)</span></label>
           <input class="input" type="date" id="birth_date" name="birth_date"
-                 value="" required max="2008-10-09">
-                  </div>
+                 value="" required max="2008-10-10">
+        </div>
       </div>
-
       <div class="row-2">
         <div class="field">
-          <label for="email">البريد الإلكتروني</label>
+          <label for="email">Email</label>
           <input class="input" type="email" id="email" name="email"
-                 value="" autocomplete="email" required placeholder="you@example.com"
-                 >
-                  </div>
+                 value="" autocomplete="email" required placeholder="you@example.com">
+        </div>
         <div class="field">
-          <label for="gender">الجنس</label>
+          <label for="gender">Gender</label>
           <select class="select" id="gender" name="gender">
-            <option value="female" >أنثى</option>
-            <option value="male"   >ذكر</option>
-            <option value="other"  >آخر / أفضل عدم الإخبار</option>
+            <option value="female">Female</option>
+            <option value="male" selected>Male</option>
+            <option value="other">Other</option>
           </select>
         </div>
       </div>
-
       <div class="row-2">
         <div class="field">
-          <label for="password">كلمة المرور</label>
+          <label for="password">Password</label>
           <input class="input" type="password" id="password" name="password"
                  autocomplete="new-password" required minlength="8" placeholder="At least 8 characters">
           <div id="pwStrength" class="hint" aria-live="polite"></div>
-                  </div>
+        </div>
         <div class="field">
-          <label for="password_confirm">تأكيد كلمة المرور</label>
+          <label for="password_confirm">Confirm password</label>
           <input class="input" type="password" id="password_confirm" name="password_confirm"
                  autocomplete="new-password" required minlength="8" placeholder="Repeat your password">
-                  </div>
+        </div>
       </div>
-
       <div class="row-2">
         <div class="field">
           <label for="orientation">Orientation</label>
           <select class="select" id="orientation" name="orientation">
-                          <option value="flexible" >Flexible</option>
-                          <option value="straight" >Straight</option>
-                          <option value="gay" >Gay</option>
-                          <option value="bi" >Bi</option>
-                          <option value="pan" >Pan</option>
-                          <option value="ace" >Ace</option>
-                      </select>
+            <option value="flexible">Flexible</option>
+            <option value="straight" selected>Straight</option>
+            <option value="gay">Gay</option>
+            <option value="bi">Bi</option>
+            <option value="pan">Pan</option>
+            <option value="ace">Ace</option>
+          </select>
         </div>
         <div class="field">
           <label for="looking_for">Looking for</label>
           <select class="select" id="looking_for" name="looking_for">
-                          <option value="friends" >Friends</option>
-                          <option value="dating" >Dating</option>
-                          <option value="relationship" >Relationship</option>
-                          <option value="couples" >Couples</option>
-                          <option value="mmf" >Mmf</option>
-                          <option value="ffm" >Ffm</option>
-                          <option value="open" >Open</option>
-                      </select>
+            <option value="friends">Friends</option>
+            <option value="dating" selected>Dating</option>
+            <option value="relationship">Relationship</option>
+            <option value="couples">Couples</option>
+            <option value="mmf">MMF</option>
+            <option value="ffm">FFM</option>
+            <option value="open">Open</option>
+          </select>
         </div>
       </div>
-
       <div class="row-2">
         <div class="field">
-          <label for="city">المدينة <span class="text-muted" style="font-weight:400">(اختياري)</span></label>
+          <label for="city">City <span class="text-muted" style="font-weight:400">Optional</span></label>
           <input class="input" type="text" id="city" name="city" value="" maxlength="60" placeholder="Paris">
         </div>
         <div class="field">
-          <label for="country">البلد <span class="text-muted" style="font-weight:400">(اختياري)</span></label>
+          <label for="country">Country <span class="text-muted" style="font-weight:400">Optional</span></label>
           <input class="input" type="text" id="country" name="country" value="" maxlength="60" placeholder="France">
         </div>
       </div>
-
       <div class="field">
-        <label for="bio">نبذة قصيرة <span class="text-muted" style="font-weight:400">(اختياري), 2000 chars</span></label>
+        <label for="bio">Bio <span class="text-muted" style="font-weight:400">Optional</span>, 2000 chars</span></label>
         <textarea class="input" id="bio" name="bio" maxlength="2000" placeholder="Tell us a little about yourself…"></textarea>
       </div>
-
       <div class="field">
         <label class="check">
-          <input type="checkbox" name="tos" value="1"  required>
+          <input type="checkbox" name="tos" value="1" required>
           <span>I confirm I am <strong>18 years or older</strong> and I accept the
-            <a href="../terms.html" target="_blank" rel="noopener">Terms of Service</a> and
-            <a href="../privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span>
+            <a href="./terms.html" target="_blank" rel="noopener">Terms of Service</a> and
+            <a href="./privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span>
         </label>
-              </div>
-
-      <button class="btn btn-primary btn-block btn-lg" type="submit">أنشئ ملفي</button>
+      </div>
+      <button class="btn btn-primary btn-block btn-lg" type="submit">Create profile</button>
     </form>
 
     <p class="auth-switch">
@@ -407,7 +389,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>اللغة</h3>
-      <form method="get" action="../register.html" class="lang-form">
+      \g<1>"../"\g<3>
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="اختر اللغة">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>
@@ -441,5 +423,16 @@
 <script>
   document.documentElement.setAttribute('dir', 'rtl');
 </script>
-</body>
+
+<script>
+  (function() {
+    var postForms = document.querySelectorAll('form[method="post"]');
+    postForms.forEach(function(f) {
+      f.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("The full DrofLove.com app is being deployed. Visit droflove.com to create your profile and start connecting.");
+      });
+    });
+  })();
+</script></body>
 </html>
