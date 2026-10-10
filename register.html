@@ -193,18 +193,152 @@
 <main id="main">
 
 <div class="auth-wrap">
-  <div class="auth-notice" style="max-width:480px;margin:2rem auto;padding:2rem;text-align:center">
-    <span class="brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
-        <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.2 3 5 6.2 5c2 0 3.4 1.2 4.1 2.5h1.4C12.4 6.2 13.8 5 15.8 5 19 5 21.1 8.2 20.6 11.8 18.5 16.4 12 21 12 21z" fill="#ff5fa2"/>
-      </svg>
-    </span>
-    <h2 style="font-size:1.4rem;margin:1rem 0">Sign-in is coming soon</h2>
-    <p class="text-muted" style="margin-bottom:1.5rem">
-      The full DrofLove.com app is being deployed. Visit <a href="https://droflove.com" style="color:var(--accent)">droflove.com</a>
-      to create your profile and start connecting.
-    </p>
-  </div>
+      <form method="post" action="/register.php" enctype="multipart/form-data" novalidate>
+      
+      <!-- Community picker -->
+      <div class="field">
+        <label>I am joining as…</label>
+        <div class="cat-grid">
+            <label class="cat-opt">
+              <input type="radio" name="category" value="single_m">
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">♂</span>
+                <span class="cat-label">Singles — Male</span>
+              </span>
+            </label>
+            <label class="cat-opt">
+              <input type="radio" name="category" value="single_f">
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">♀</span>
+                <span class="cat-label">Singles — Female</span>
+              </span>
+            </label>
+            <label class="cat-opt">
+              <input type="radio" name="category" value="couple">
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">⚧</span>
+                <span class="cat-label">Couples</span>
+              </span>
+            </label>
+            <label class="cat-opt">
+              <input type="radio" name="category" value="mmf">
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">♂♂♀</span>
+                <span class="cat-label">MMF (2 Men + 1 Woman)</span>
+              </span>
+            </label>
+            <label class="cat-opt">
+              <input type="radio" name="category" value="ffm">
+              <span class="cat-body">
+                <span class="cat-icon" aria-hidden="true">♀♀♂</span>
+                <span class="cat-label">FFM (2 Women + 1 Man)</span>
+              </span>
+            </label>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label for="first_name">First name</label>
+          <input class="input" type="text" id="first_name" name="first_name"
+                 value="" autocomplete="given-name" required maxlength="60" placeholder="Ana">
+        </div>
+        <div class="field">
+          <label for="last_name">Last name <span class="text-muted" style="font-weight:400">Optional</span></label>
+          <input class="input" type="text" id="last_name" name="last_name"
+                 value="" autocomplete="family-name" maxlength="60" placeholder="Sofia">
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label for="username">Username</label>
+          <input class="input" type="text" id="username" name="username"
+                 value="" autocomplete="username" required minlength="3" maxlength="30"
+                 pattern="[A-Za-z0-9_]+" placeholder="ana_sofia">
+          <div class="hint">Letters, numbers, and underscores only.</div>
+        </div>
+        <div class="field">
+          <label for="birth_date">Birth date <span class="text-muted" style="font-weight:400">(18+)</span></label>
+          <input class="input" type="date" id="birth_date" name="birth_date"
+                 value="" required max="2008-10-10">
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" name="email"
+                 value="" autocomplete="email" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="gender">Gender</label>
+          <select class="select" id="gender" name="gender">
+            <option value="female">Female</option>
+            <option value="male" selected>Male</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label for="password">Password</label>
+          <input class="input" type="password" id="password" name="password"
+                 autocomplete="new-password" required minlength="8" placeholder="At least 8 characters">
+          <div id="pwStrength" class="hint" aria-live="polite"></div>
+        </div>
+        <div class="field">
+          <label for="password_confirm">Confirm password</label>
+          <input class="input" type="password" id="password_confirm" name="password_confirm"
+                 autocomplete="new-password" required minlength="8" placeholder="Repeat your password">
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label for="orientation">Orientation</label>
+          <select class="select" id="orientation" name="orientation">
+            <option value="flexible">Flexible</option>
+            <option value="straight" selected>Straight</option>
+            <option value="gay">Gay</option>
+            <option value="bi">Bi</option>
+            <option value="pan">Pan</option>
+            <option value="ace">Ace</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="looking_for">Looking for</label>
+          <select class="select" id="looking_for" name="looking_for">
+            <option value="friends">Friends</option>
+            <option value="dating" selected>Dating</option>
+            <option value="relationship">Relationship</option>
+            <option value="couples">Couples</option>
+            <option value="mmf">MMF</option>
+            <option value="ffm">FFM</option>
+            <option value="open">Open</option>
+          </select>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label for="city">City <span class="text-muted" style="font-weight:400">Optional</span></label>
+          <input class="input" type="text" id="city" name="city" value="" maxlength="60" placeholder="Paris">
+        </div>
+        <div class="field">
+          <label for="country">Country <span class="text-muted" style="font-weight:400">Optional</span></label>
+          <input class="input" type="text" id="country" name="country" value="" maxlength="60" placeholder="France">
+        </div>
+      </div>
+      <div class="field">
+        <label for="bio">Bio <span class="text-muted" style="font-weight:400">Optional</span>, 2000 chars</span></label>
+        <textarea class="input" id="bio" name="bio" maxlength="2000" placeholder="Tell us a little about yourself…"></textarea>
+      </div>
+      <div class="field">
+        <label class="check">
+          <input type="checkbox" name="tos" value="1" required>
+          <span>I confirm I am <strong>18 years or older</strong> and I accept the
+            <a href="./terms.html" target="_blank" rel="noopener">Terms of Service</a> and
+            <a href="./privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span>
+        </label>
+      </div>
+      <button class="btn btn-primary btn-block btn-lg" type="submit">Create profile</button>
+    </form>
 
     <p class="auth-switch">
       Already a member? <a href="./login.html">Sign in</a>
@@ -287,5 +421,16 @@
 <script>
   document.documentElement.setAttribute('dir', 'ltr');
 </script>
-</body>
+
+<script>
+  (function() {
+    var postForms = document.querySelectorAll('form[method="post"]');
+    postForms.forEach(function(f) {
+      f.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("The full DrofLove.com app is being deployed. Visit droflove.com to create your profile and start connecting.");
+      });
+    });
+  })();
+</script></body>
 </html>
