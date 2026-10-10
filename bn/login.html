@@ -10,7 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="240393f3564d8e4f69552f28b4d918e10163397a8d0a5594368d67db976203a1">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="ltr">
 
@@ -201,8 +203,8 @@
       <p class="text-muted" style="margin:0">DrofLove.com এ সাইন ইন করুন</p>
     </div>
 
-    <form method="post" action="../login.html" novalidate>
-      <input type="hidden" name="csrf" value="240393f3564d8e4f69552f28b4d918e10163397a8d0a5594368d67db976203a1">
+    <form method="post" action="https://droflove.com/login.php?lang=bn" novalidate>
+      
       <div class="field">
         <label for="email">ইমেল বা ব্যবহারকারী নাম</label>
         <input class="input" type="email" id="email" name="email"
@@ -267,7 +269,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>ভাষা</h3>
-      <form method="get" action="../login.html" class="lang-form">
+      <form method="get" action="../" class="lang-form">
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="ভাষা নির্বাচন করুন">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>

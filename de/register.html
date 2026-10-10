@@ -10,7 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="7e2f45acd9de006cca4ac53e71a0051d29e7c4462a027b63728f415fc078c104">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="ltr">
 
@@ -201,8 +203,8 @@
       <p class="text-muted" style="margin:0">Schließe dich DrofLove.com an — kostenlos und privat</p>
     </div>
 
-    <form method="post" action="../register.html" novalidate>
-      <input type="hidden" name="csrf" value="7e2f45acd9de006cca4ac53e71a0051d29e7c4462a027b63728f415fc078c104">
+    <form method="post" action="https://droflove.com/register.php?lang=de" novalidate>
+      
       <!-- Community picker -->
       <div class="field">
         <label>Ich schließe als…</label>
@@ -407,7 +409,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>Sprache</h3>
-      <form method="get" action="../register.html" class="lang-form">
+      <form method="get" action="../" class="lang-form">
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="Sprache auswählen">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>

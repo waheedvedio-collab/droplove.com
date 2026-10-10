@@ -10,7 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="1733c865e34c505341863a2ddd98ab2aec6c62f33563adaa3f6c0ade9ce0119d">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="rtl">
 
@@ -201,8 +203,8 @@
       <p class="text-muted" style="margin:0">DrofLove.com شامل کریں — مفت اور نجی</p>
     </div>
 
-    <form method="post" action="../register.html" novalidate>
-      <input type="hidden" name="csrf" value="1733c865e34c505341863a2ddd98ab2aec6c62f33563adaa3f6c0ade9ce0119d">
+    <form method="post" action="https://droflove.com/register.php?lang=ur" novalidate>
+      
       <!-- Community picker -->
       <div class="field">
         <label>میں اندرج کر رہا ہوں…</label>
@@ -407,7 +409,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>زبان</h3>
-      <form method="get" action="../register.html" class="lang-form">
+      <form method="get" action="../" class="lang-form">
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="زبان منتخب کریں">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>

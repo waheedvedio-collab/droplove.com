@@ -10,7 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="3f8fef0beaae1a61755355a1437e857f78da251a77452e76fe68a55a3222a879">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="ltr">
 
@@ -201,8 +203,8 @@
       <p class="text-muted" style="margin:0">DrofLove.com এ যোগদান করুন — বিনামূল্যে এবং ব্যক্তিগত</p>
     </div>
 
-    <form method="post" action="../register.html" novalidate>
-      <input type="hidden" name="csrf" value="3f8fef0beaae1a61755355a1437e857f78da251a77452e76fe68a55a3222a879">
+    <form method="post" action="https://droflove.com/register.php?lang=bn" novalidate>
+      
       <!-- Community picker -->
       <div class="field">
         <label>আমি … হিসাবে যুক্ত হচ্ছি</label>
@@ -407,7 +409,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>ভাষা</h3>
-      <form method="get" action="../register.html" class="lang-form">
+      <form method="get" action="../" class="lang-form">
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="ভাষা নির্বাচন করুন">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>

@@ -10,7 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="4240ad8d0517e943f0b88dbddc04f1385455410ce78a6a1b0860b905310a913d">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="ltr">
 
@@ -201,8 +203,8 @@
       <p class="text-muted" style="margin:0">Войдите в DrofLove.com</p>
     </div>
 
-    <form method="post" action="../login.html" novalidate>
-      <input type="hidden" name="csrf" value="4240ad8d0517e943f0b88dbddc04f1385455410ce78a6a1b0860b905310a913d">
+    <form method="post" action="https://droflove.com/login.php?lang=ru" novalidate>
+      
       <div class="field">
         <label for="email">Email или имя пользователя</label>
         <input class="input" type="email" id="email" name="email"
@@ -267,7 +269,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>Язык</h3>
-      <form method="get" action="../login.html" class="lang-form">
+      <form method="get" action="../" class="lang-form">
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="Выбрать язык">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>

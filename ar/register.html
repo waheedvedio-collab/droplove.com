@@ -10,7 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=1791538196">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<meta name="csrf-token" content="f499a9cfd22e7263dc3a7f79c7aa778161c906ba5217071d98c1fc71d22871fd">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body class="rtl">
 
@@ -201,8 +203,8 @@
       <p class="text-muted" style="margin:0">انضم إلى DrofLove.com — مجاناً وخاصاً</p>
     </div>
 
-    <form method="post" action="../register.html" novalidate>
-      <input type="hidden" name="csrf" value="f499a9cfd22e7263dc3a7f79c7aa778161c906ba5217071d98c1fc71d22871fd">
+    <form method="post" action="https://droflove.com/register.php?lang=ar" novalidate>
+      
       <!-- Community picker -->
       <div class="field">
         <label>أنا أنضم كـ…</label>
@@ -407,7 +409,7 @@
 
     <div class="footer-col footer-lang-col">
       <h3>اللغة</h3>
-      <form method="get" action="../register.html" class="lang-form">
+      <form method="get" action="../" class="lang-form">
                 <select name="lang" class="lang-select" onchange="this.form.submit()" aria-label="اختر اللغة">
                       <option value="en" >English</option>
                       <option value="fr" >Français</option>
